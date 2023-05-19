@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Maiden Dashboard</title>
+</head>
+<body>
+  <main class="flex items-center min-h-screen bg-green-200">
+    <section class="p-10 bg-emerald-500 w-3/4 mx-auto space-y-3 shadow-lg shadow-gray-500 md:shadow-xl md:shadow-gray-500">
+        <H2 class="text-3xl text-center pb-3 text-white">Welcome to our Maiden Transaction Dashboard</H2>
+
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-purple-500 text-lg p-2 text-white rounded-lg space-3 ">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-4xl">$<span id="deposit-total">000</span></h2>
+          </div>
+          <div class="bg-amber-500 text-lg p-5 text-white rounded-lg space-3">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2 class="text-4xl">$<span id="withdraw-total">000</span></h2>
+          </div>
+          <div class="bg-blue-700 text-lg p-5 text-white rounded-lg space-y-3">
+            <h4 class="text-2xl ">Balance</h4>
+            <h2 class="text-4xl ">$<span id="balance-total">000</span></h2>
+          </div>
+        
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div class="bg-[#67e6dc] p-4 rounded-lg space-y-3">
+            <h3 class="text-white text-2xl">Deposit Amount</h3>
+            <input id="deposit-input" class="w-full px-3 py-1 font-semibold rounded-lg" type="number" required placeholder="  Enter $ Deposit Amount">
+            <button id="deposit-button" class="w-2/4 bg-[#1e90ff]	rounded-tl-lg hover:rounded-lg hover:text-[#ffffff] font-semibold px-2 py-1">Deposit</button>
+          </div>
+          <div class="bg-[#C4E538] p-4 rounded-lg space-y-3">
+            <h3 class="text-white text-2xl">Withdraw Amount</h3>
+            <input id="withdraw-input" class="w-full px-3 py-1 font-semibold rounded-lg" type="number" required placeholder="  Enter $ Withdraw Amount">
+            <button id="withdraw-button" class="w-2/4 bg-[#1e90ff]	rounded-tl-lg hover:rounded-lg hover:text-[#ffffff] font-semibold px-2 py-1">Withdraw</button>
+          </div>
+          
+        </div>
+        
+      </section>
+    
+  </main>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
